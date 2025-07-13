@@ -1,10 +1,9 @@
 # Floys-Alogo
-Floyd’s algorithm to use recursion
+Floyd algorithm to use recursion
 
 import sys
 
 NO_PATH = sys.maxsize
-
 graph = [
     [0, 7, NO_PATH, 8],
     [NO_PATH, 0, 5, NO_PATH],
@@ -39,4 +38,12 @@ def print_matrix(matrix):
         print(["INF" if val == NO_PATH else val for val in row])
 
 floyd_iterative(graph)
+Result
+[0, 7, 12, 8]
+['INF', 0, 5, 7]
+['INF', 'INF', 0, 2]
+['INF', 'INF', 'INF', 0]
 
+Install requiremnt.txt in PyCharm 
+
+Running both iterative and recursive for the comparison 
